@@ -111,17 +111,17 @@ class Admin extends React.Component {
     return (
       <>
         <div className="wrapper">
-          <Sidebar
+          {/* <Sidebar
             {...this.props}
             routes={routes}
             bgColor={this.state.backgroundColor}
             logo={{
               outterLink: "https://www.creative-tim.com/",
-              text: "Creative Tim",
+              text: "IT Digital",
               imgSrc: logo
             }}
             toggleSidebar={this.toggleSidebar}
-          />
+          /> */}
           <div
             className="main-panel"
             ref="mainPanel"
@@ -134,10 +134,10 @@ class Admin extends React.Component {
               sidebarOpened={this.state.sidebarOpened}
             />
             <Switch>{this.getRoutes(routes)}</Switch>
-            {// we don't want the Footer to be rendered on map page
+            {/* {// we don't want the Footer to be rendered on map page
             this.props.location.pathname.indexOf("maps") !== -1 ? null : (
               <Footer fluid />
-            )}
+            )} */}
           </div>
         </div>
         <FixedPlugin

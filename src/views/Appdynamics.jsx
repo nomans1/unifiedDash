@@ -4,8 +4,6 @@ import React from "react";
 import classNames from "classnames";
 // react plugin used to create charts
 import { Line, Bar } from "react-chartjs-2";
-import Iframe from "react-iframe";
-import ResponsiveEmbed from 'react-responsive-embed'
 
 // reactstrap components
 import {
@@ -58,7 +56,7 @@ class Dashboard extends React.Component {
                 <CardHeader>
                   <Row>
                     <Col className="text-left" sm="6">
-                      <h5 className="card-category">SOASTA</h5>
+                      <h5 className="card-category">Customer Journeys</h5>
                       {/* <CardTitle tag="h2">Web</CardTitle> */}
                     </Col>
                     
@@ -66,7 +64,7 @@ class Dashboard extends React.Component {
                 </CardHeader>
                 <CardBody>
                   <div className="chart-area">
-                    <iframe width='100%' height='100%' src="https://mpulse.soasta.com/concerto/DashboardServlet?dashboardID=2239411&public=true&filterUID=6543ff2d-fd5e-48a2-b660-c4fe75e93a62"  />
+                    <iframe width='100%' height='100%' src="http://vglm12vr.dc-dublin.de:8090/controller/dashboards.jsp?desktopView=true&webpack=prod#/location=DASHBOARD_VIEWER&token=de681b99-0f8c-41f0-9fce-fddd7e4095c5&timeRange=last_12_hours.BEFORE_NOW.-1.-1.720"  />
                     {/* <Iframe url="http://vglm12vr.dc-dublin.de:8090/controller/dashboards.jsp?desktopView=false&webpack=prod#/location=DASHBOARD_VIEWER&token=47149ed4-34a8-429d-8015-e1e74c105d2f&timeRange=last_1_hour.BEFORE_NOW.-1.-1.60"/> */}
                   </div>
 
