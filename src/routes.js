@@ -12,26 +12,26 @@ import UserProfile from "views/UserProfile.jsx";
 var routes = [
   {
     path: "/soasta",
-    name: "SOASTA",
-    rtlName: "لوحة القيادة",
-    icon: "tim-icons icon-chart-pie-36",
+    name: "Web",
     component: Dashboard,
     layout: "/admin"
   },
   {
     path: "/appdynamics",
-    name: "AppDynamics",
-    rtlName: "الرموز",
-    icon: "tim-icons icon-atom",
+    name: "AppDynamics Portal",
     component: Appdynamics,
     layout: "/admin"
   },
   {
-    path: "/dynatrace",
-    name: "Dynatrace",
-    rtlName: "خرائط",
-    icon: "tim-icons icon-pin",
+    path: "/soastaapp",
+    name: "App",
     component: Map,
+    layout: "/admin"
+  },
+  {
+    path: "/performance",
+    name: "Performance",
+    component: TableList,
     layout: "/admin"
   }
 ];

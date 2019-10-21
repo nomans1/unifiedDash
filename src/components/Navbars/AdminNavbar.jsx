@@ -18,7 +18,7 @@
 import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
-import {  Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // reactstrap components
 import {
   Button,
@@ -141,53 +141,16 @@ class AdminNavbar extends React.Component {
                     <span className="d-lg-none d-md-block">Search</span>
                   </Button>
                 </InputGroup> */}
-                <div className="navbar-wrapper">
-                <Link
-            to='/admin/appdynamics'
-            className="simple-text logo-normal" 
-          >
-            AppDynamics
-          </Link>
-          </div>
-                <UncontrolledDropdown nav>
-                  <DropdownToggle
-                    caret
-                    color="default"
-                    data-toggle="dropdown"
-                    nav
+                {/* <div className="navbar-wrapper">
+                  <Link
+                    to="/admin/appdynamics"
+                    className="simple-text logo-normal"
                   >
-                    <div className="notification d-none d-lg-block d-xl-block" />
-                    <i className="tim-icons icon-sound-wave" />
-                    <p className="d-lg-none">Notifications</p>
-                  </DropdownToggle>
-                  <DropdownMenu className="dropdown-navbar" right tag="ul">
-                    <NavLink tag="li">
-                      <DropdownItem className="nav-item">
-                        Mike John responded to your email
-                      </DropdownItem>
-                    </NavLink>
-                    <NavLink tag="li">
-                      <DropdownItem className="nav-item">
-                        You have 5 more tasks
-                      </DropdownItem>
-                    </NavLink>
-                    <NavLink tag="li">
-                      <DropdownItem className="nav-item">
-                        Your friend Michael is in town
-                      </DropdownItem>
-                    </NavLink>
-                    <NavLink tag="li">
-                      <DropdownItem className="nav-item">
-                        Another notification
-                      </DropdownItem>
-                    </NavLink>
-                    <NavLink tag="li">
-                      <DropdownItem className="nav-item">
-                        Another one
-                      </DropdownItem>
-                    </NavLink>
-                  </DropdownMenu>
-                </UncontrolledDropdown>
+                    AppDynamics
+                  </Link>
+                </div> */}
+
+                <li className="separator d-lg-none" />
                 <UncontrolledDropdown nav>
                   <DropdownToggle
                     caret
@@ -196,26 +159,111 @@ class AdminNavbar extends React.Component {
                     nav
                     onClick={e => e.preventDefault()}
                   >
-                    <div className="photo">
-                      <img alt="..." src={require("assets/img/anime3.png")} />
-                    </div>
+                    <div className="navbar-wrapper">AppDynamics</div>
                     <b className="caret d-none d-lg-block d-xl-block" />
-                    <p className="d-lg-none">Log out</p>
                   </DropdownToggle>
                   <DropdownMenu className="dropdown-navbar" right tag="ul">
                     <NavLink tag="li">
-                      <DropdownItem className="nav-item">Profile</DropdownItem>
+                      <DropdownItem className="nav-item">
+                        {" "}
+                        <Link
+                          to="/admin/appdynamics"
+                          className="simple-text logo-normal"
+                          style={{color:'#9a9a9a'}}
+                        >
+                          AppDynamics Portal
+                        </Link>
+                      </DropdownItem>
                     </NavLink>
                     <NavLink tag="li">
-                      <DropdownItem className="nav-item">Settings</DropdownItem>
+                      <DropdownItem className="nav-item">                        
+                      <Link
+                          to="#"
+                          className="simple-text logo-normal"
+                          style={{color:'#9a9a9a'}}
+                        >
+                          AppDynamics OSB
+                        </Link></DropdownItem>
                     </NavLink>
-                    <DropdownItem divider tag="li" />
-                    <NavLink tag="li">
-                      <DropdownItem className="nav-item">Log out</DropdownItem>
-                    </NavLink>
+                    
                   </DropdownMenu>
                 </UncontrolledDropdown>
                 <li className="separator d-lg-none" />
+                <UncontrolledDropdown nav>
+                  <DropdownToggle
+                    caret
+                    color="default"
+                    data-toggle="dropdown"
+                    nav
+                    onClick={e => e.preventDefault()}
+                  >
+                    <div className="navbar-wrapper">SOASTA</div>
+                    <b className="caret d-none d-lg-block d-xl-block" />
+                  </DropdownToggle>
+                  <DropdownMenu className="dropdown-navbar" right tag="ul">
+                    <NavLink tag="li">
+                      <DropdownItem className="nav-item">
+                        {" "}
+                        <Link
+                          to="/admin/soasta"
+                          className="simple-text logo-normal"
+                          style={{color:'#9a9a9a'}}
+                        >
+                          SOASTA Web
+                        </Link>
+                      </DropdownItem>
+                    </NavLink>
+                    <NavLink tag="li">
+                      <DropdownItem className="nav-item">                        
+                      <Link
+                          to="/admin/soastaapp"
+                          className="simple-text logo-normal"
+                          style={{color:'#9a9a9a'}}
+                        >
+                          SOASTA App
+                        </Link></DropdownItem>
+                    </NavLink>
+                    
+                  </DropdownMenu>
+                </UncontrolledDropdown>
+                <li className="separator d-lg-none" />
+                <UncontrolledDropdown nav>
+                  <DropdownToggle
+                    caret
+                    color="default"
+                    data-toggle="dropdown"
+                    nav
+                    onClick={e => e.preventDefault()}
+                  >
+                    <div className="navbar-wrapper">Performance</div>
+                    <b className="caret d-none d-lg-block d-xl-block" />
+                  </DropdownToggle>
+                  <DropdownMenu className="dropdown-navbar" right tag="ul">
+                    <NavLink tag="li">
+                      <DropdownItem className="nav-item">
+                        {" "}
+                        <Link
+                          to="/admin/performance"
+                          className="simple-text logo-normal"
+                          style={{color:'#9a9a9a'}}
+                        >
+                          Pagespeed Insights
+                        </Link>
+                      </DropdownItem>
+                    </NavLink>
+                    <NavLink tag="li">
+                      <DropdownItem className="nav-item">                        
+                      <Link
+                          to="#"
+                          className="simple-text logo-normal"
+                          style={{color:'#9a9a9a'}}
+                        >
+                          GTMetrix
+                        </Link></DropdownItem>
+                    </NavLink>
+                    
+                  </DropdownMenu>
+                </UncontrolledDropdown>
               </Nav>
             </Collapse>
           </Container>
