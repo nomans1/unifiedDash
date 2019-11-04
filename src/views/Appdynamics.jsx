@@ -50,34 +50,34 @@ class Dashboard extends React.Component {
             </Col>
           </Row>
           <Row>
-            <Col lg="4">
+            <Col lg="6">
               <Card className="card-chart">
                 <CardHeader>
-                  <h5 className="card-category">Portal Nodes Health</h5>
+                  <h5 className="card-category">Errors</h5>
   
                 </CardHeader>
                 <CardBody>
                   <div className="chart-area-big">
                    
-                  <iframe className="iframe-widget" width='100%' height='100%' src="http://vglm12vr.dc-dublin.de:8090/controller/dashboards.jsp?desktopView=false&webpack=prod#/location=DASHBOARD_VIEWER&token=47149ed4-34a8-429d-8015-e1e74c105d2f&timeRange=last_1_hour.BEFORE_NOW.-1.-1.60"  />
+                  <iframe className="iframe-widget" width='100%' height='100%' src="http://vglm12vr.dc-dublin.de:8090/controller/dashboards.jsp?desktopView=false&webpack=prod#/location=DASHBOARD_VIEWER&token=f6105c79-6ddd-430a-8c06-8a1b93b7e358&timeRange=last_1_hour.BEFORE_NOW.-1.-1.60"  />
                     {/* <ResponsiveEmbed src="http://vglm12vr.dc-dublin.de:8090/controller/dashboards.jsp?desktopView=false&webpack=prod#/location=DASHBOARD_VIEWER&token=47149ed4-34a8-429d-8015-e1e74c105d2f&timeRange=last_1_hour.BEFORE_NOW.-1.-1.60"/> */}
                   </div>
                 </CardBody>
               </Card>
             </Col>
-            <Col lg="4">
+            <Col lg="6">
               <Card className="card-chart">
                 <CardHeader>
-                  <h5 className="card-category">Daily Sales</h5>
+                  <h5 className="card-category">Overall Portal Load</h5>
                 </CardHeader>
                 <CardBody>
                   <div className="chart-area-big">
- 
+                  <iframe className="iframe-widget" width='100%' height='100%' src="http://vglm12vr.dc-dublin.de:8090/controller/dashboards.jsp?desktopView=false&webpack=prod#/location=DASHBOARD_VIEWER&token=395e6db9-846e-489b-a092-3aeb04b7363d&timeRange=last_1_hour.BEFORE_NOW.-1.-1.60"  />
                   </div>
                 </CardBody>
               </Card>
             </Col>
-            <Col lg="4">
+            {/* <Col lg="6">
               <Card className="card-chart">
                 <CardHeader>
                   <h5 className="card-category">Completed Tasks</h5>
@@ -89,18 +89,20 @@ class Dashboard extends React.Component {
                   </div>
                 </CardBody>
               </Card>
-            </Col>
+            </Col> */}
           </Row>
           <Row>
-            <Col lg="6" md="12">
-              <Card className="card-tasks">
+          <Col lg="6">
+              <Card className="card-chart">
                 <CardHeader>
-                <h5 className="card-category">Completed Tasks</h5>
-                  
+                  <h5 className="card-category">Portal Nodes Health</h5>
+  
                 </CardHeader>
                 <CardBody>
-                  <div className="table-full-width table-responsive">
-
+                  <div className="chart-area-big">
+                   
+                  <iframe className="iframe-widget" width='100%' height='100%' src="http://vglm12vr.dc-dublin.de:8090/controller/dashboards.jsp?desktopView=false&webpack=prod#/location=DASHBOARD_VIEWER&token=47149ed4-34a8-429d-8015-e1e74c105d2f&timeRange=last_1_hour.BEFORE_NOW.-1.-1.60"  />
+                    {/* <ResponsiveEmbed src="http://vglm12vr.dc-dublin.de:8090/controller/dashboards.jsp?desktopView=false&webpack=prod#/location=DASHBOARD_VIEWER&token=47149ed4-34a8-429d-8015-e1e74c105d2f&timeRange=last_1_hour.BEFORE_NOW.-1.-1.60"/> */}
                   </div>
                 </CardBody>
               </Card>

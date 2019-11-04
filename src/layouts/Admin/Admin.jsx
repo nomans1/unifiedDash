@@ -1,20 +1,4 @@
-/*!
 
-=========================================================
-* Black Dashboard React v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/black-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/black-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 // javascript plugin used to create scrollbars on windows
@@ -22,13 +6,10 @@ import PerfectScrollbar from "perfect-scrollbar";
 
 // core components
 import AdminNavbar from "components/Navbars/AdminNavbar.jsx";
-import Footer from "components/Footer/Footer.jsx";
-import Sidebar from "components/Sidebar/Sidebar.jsx";
-import FixedPlugin from "components/FixedPlugin/FixedPlugin.jsx";
+// import Footer from "components/Footer/Footer.jsx";
+// import Sidebar from "components/Sidebar/Sidebar.jsx";
 
 import routes from "routes.js";
-
-import logo from "assets/img/react-logo.png";
 
 var ps;
 
@@ -116,7 +97,7 @@ class Admin extends React.Component {
             routes={routes}
             bgColor={this.state.backgroundColor}
             logo={{
-              outterLink: "https://www.creative-tim.com/",
+              outterLink: "#",
               text: "IT Digital",
               imgSrc: logo
             }}
@@ -140,10 +121,7 @@ class Admin extends React.Component {
             )} */}
           </div>
         </div>
-        {/* <FixedPlugin
-          bgColor={this.state.backgroundColor}
-          handleBgClick={this.handleBgClick}
-        /> */}
+
       </>
     );
   }
